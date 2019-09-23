@@ -15,7 +15,8 @@
 
 **title:** Challenge Elo Group Form
 
-**description:** This repository is part of the programming challenge Elo Group.
+**description:**  This repository is part of the programming challenge Elo Group.
+
 ---
 
 
