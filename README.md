@@ -1,6 +1,6 @@
 # myapp
 ---
-**date:** 2019-09-22
+**date:** 22-09-2019
 
 **category:** application
 
@@ -10,8 +10,11 @@
   - *mongodb*
 
 **authors:** [magalha7]
+
 **layout:** post
+
 **title:** Challenge Elo Group Form
+
 **description:** This repository is part of the programming challenge Elo Group.
 ---
 
