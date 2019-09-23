@@ -1,0 +1,39 @@
+{{#each erros}}
+    <div class="alert alert-danger">{{texto}}</div>
+{{else}}
+
+{{/each}}
+
+<h3>Novo Formulário de cadastro de membros:</h3>
+<div class="card">
+    <div class="card-body">
+        <form action="/admin/formularios/novo" method="POST">
+            <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." class="form-control">
+            <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome..." class="form-control">
+            <label for="telefone">Telefone:</label>
+               <input type="text" id="telefone" name="telefone" class="form-control" onkeypress="$(this).mask('(00) 0000-00009')"placeholder="(00) 99999-9999" class="form-control">
+            <label for="descricao">Como nos conheceu:</label>
+            <select class="custom-select" name="descricao">
+                    <option value="null">Escolha uma opção:</option>
+                    <option value="Televisão">Televisão</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Jornais">Jornais</option>
+                    <option value="Redes Sociais">Redes Sociais</option>
+            </select>
+            <label for="redeSocial">Possui alguma rede social:</label>
+            <input name="ativo" type="radio" class="form" value="S" onclick="if(document.getElementById('redeSocial').hidden==true){document.getElementById('redeSocial').hidden=false}"/>Sim
+            <input name="ativo" type="radio" class="form" value="N" onclick="if(document.getElementById('redeSocial').hidden==false){document.getElementById('redeSocial').hidden=true}"/>Não
+            <select class="custom-select" name="redeSocial" id="redeSocial" hidden="true">
+                <option value="null">Escolha uma opção:</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Google">Google</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-success mt-4">Confirmar</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<h2>Lista de usuários cadastrados:</h2>
+<hr>
+{{#each formularios}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <small><b>Nome: </b>{{nome}}</small><br>
+            <small><b>Sobrenome: </b>{{sobrenome}}</small><br>
+            <small><b>Telefone: </b>{{telefone}}</small><br>
+            <small><b>Como nos conheceu: </b>{{descricao}}</small><br>
+            <small><b>Rede social: </b>{{redeSocial}}</small><br>
+            <small><b>Data de criação: </b>{{date}}</small><br>
+            <a href="/admin/formularios/edit/{{_id}}"><button class="btn btn-success mt-4">Editar dados do usuário</button></a>
+            <form action="/admin/formularios/deletar" method="POST">
+                <input type="hidden" name="id" value="{{_id}}">
+                <button type="submit" class="btn btn-danger mt-2">Deletar usuário</button>
+            </form>
+        </div>
+    </div>
+{{else}}
+    <h6 class="mt-3">Nenhum Membro Registrado.</h6>
+{{/each}}
+<hr>
+<a href="/admin/formularios/add"><button class="btn btn-success">Cadastrar</button></a>
+<hr>

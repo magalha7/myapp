@@ -51,3 +51,7 @@ Install the module "Session":
 
 Install the module "Connect-flash": 
 **$ npm install --save connect-flash**
+
+- 1) After install the modules lited above, start "Mongo services". Open the terminal and execute: **$ sudo service mongod start**
+- 2) Into the paste project open the terminal and execute: **$ nodemon app.js**
+- 3) Open your Browser and type it: **http://localhost:8080/**  

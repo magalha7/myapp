@@ -1,0 +1,38 @@
+{{#each erros}}
+    <div class="alert alert-danger">{{texto}}</div>
+{{else}}
+
+{{/each}}
+
+<h3>Editar informações do usuário:</h3>
+<div class="card">
+    <div class="card-body">
+        <form action="/admin/formularios/edit" method="POST">
+            <input type="hidden" name="id" value="{{formularios._id}}">
+            <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" value="{{formularios.nome}}">
+            <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome"  class="form-control" value="{{formularios.sobrenome}}">
+            <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" class="form-control" onkeypress="$(this).mask('(00) 0000-00009')"placeholder="(00) 99999-9999" class="form-control" value="{{formularios.telefone}}">
+            <label for="descricao">Como nos conheceu:</label>
+            <select class="custom-select" name="descricao" id="descricao">
+                    <option value="{{formularios.descricao}}">Sua opção: {{formularios.descricao}}</option>
+                    <option value="Televisão">Televisão</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Jornais">Jornais</option>
+                    <option value="Redes Sociais">Redes Sociais</option>
+            </select>
+            <label for="redeSocial">Rede social:</label>
+            <select class="custom-select" name="redeSocial" id="redeSocial">
+                <option value="{{formularios.redeSocial}}">Sua opção: {{formularios.redeSocial}}</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Google">Google</option>
+            </select>   
+                <br>
+            <button type="submit" class="btn btn-success mt-4">Editar informações</button>
+        </form>
+    </div>
+</div>
