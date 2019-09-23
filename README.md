@@ -5,9 +5,9 @@
 **category:** application
 
 **tags:**
-  - *html*
-  - *nodejs*
-  - *mongodb*
+  - *#html*
+  - *#nodejs*
+  - *#mongodb*
 
 **authors:** [magalha7]
 
@@ -30,5 +30,5 @@ For install NodeJS in linux system access:
 https://nodejs.org/en/
 
 
-After the first steps install the module "Express" to make requests "Https"
-$ npm install express 
+After the first steps install the module "Express" to make requests "Https"\\
+$ **npm install express --save**
