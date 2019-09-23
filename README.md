@@ -43,8 +43,11 @@ Install the module "handlebars":
 Install the module "body-parser":
 **$ npm install --save body-parser**
 
-Install the module "Mongoose"
+Install the module "Mongoose": 
 **$ npm install --save mongoose**
 
-Install the module "Session"
+Install the module "Session": 
 **$ npm install --save express-session**
+
+Install the module "Connect-flash": 
+**$ npm install --save connect-flash**
