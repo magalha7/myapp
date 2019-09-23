@@ -31,25 +31,25 @@ https://nodejs.org/en/
 
 The modules bellow must be installed in the application directory
 
-After the first steps install the module "Express" to make requests "Https": 
+- After the first steps install the module "Express" to make requests "Https": 
 **$ npm install express --save**
 
-Install the module "Nodemon":
+- Install the module "Nodemon":
 **$ npm install nodemon -g** 
 
-Install the module "handlebars":
+- Install the module "handlebars":
 **$ npm install --save express-handlebars**
 
-Install the module "body-parser":
+- Install the module "body-parser":
 **$ npm install --save body-parser**
 
-Install the module "Mongoose": 
+- Install the module "Mongoose": 
 **$ npm install --save mongoose**
 
-Install the module "Session": 
+- Install the module "Session": 
 **$ npm install --save express-session**
 
-Install the module "Connect-flash": 
+- Install the module "Connect-flash": 
 **$ npm install --save connect-flash**
 
 - 1) After install the modules lited above, start "Mongo services". Open the terminal and execute: **$ sudo service mongod start**
